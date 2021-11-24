@@ -23,7 +23,7 @@ const ProductList = () => {
     }, [])
 
     return (
-        <div style={{ paddingTop: '7rem' }} className='ui grid'>
+        <div style={{ marginTop: '4rem' }} className='ui grid container'>
             <Product />
         </div>
     )
