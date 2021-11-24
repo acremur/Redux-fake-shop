@@ -39,7 +39,7 @@
     flex: 5;
     padding: 0 1rem;
     min-height: calc(375px * (5/8));
-    border: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 
 .productTop img {
@@ -110,5 +110,11 @@
 @media (max-width: 600px) {
     .productListContainer {
       padding: 7rem 10rem;
+    }
+
+    .productCard {
+        /* margin: 0; */
+        /* padding: 0; */
+        width: 100%;
     }
   }
