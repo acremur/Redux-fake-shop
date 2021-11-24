@@ -13,9 +13,9 @@ const Product = () => {
                         <img src={image} alt={title} />
                     </div>
                     <div className="productBottom">
-                        <div style={{ fontSize: '12px', fontWeight: '500' }} className="header">{title}</div>
-                        <div style={{ fontSize: '21px', fontWeight: '700' }} className="meta price">{price}€</div>
-                        <div style={{ color: 'gray', marginTop: '1rem', paddingTop: '0.5rem', borderTop: '1px solid gray' }}  className="meta">{category}</div>
+                        <div className="productTitle">{title}</div>
+                        <div className="productPrice">{price}€</div>
+                        <div className="productCategory">{category}</div>
                     </div>
                 </div>
             </Link>

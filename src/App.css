@@ -17,7 +17,7 @@
 .productCard {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 1rem 0;
     width: 250px;
     height: 400px;
     border: 1px solid black;
@@ -35,11 +35,10 @@
 }
 
 .productTop {
-    flex: 4;
-    padding: 1rem;
-    height: 65%;
-    max-height: calc(400px * (4/6));
-    padding-bottom: 0;
+    flex: 5;
+    padding: 0 1rem;
+    min-height: calc(400px * (5/8));
+    border: 1px solid lightgray;
 }
 
 .productTop img {
@@ -50,14 +49,36 @@
 }
 
 .productBottom {
-    flex: 2;
+    overflow: auto;
+    flex: 3;
     padding: 1rem;
+    margin: 0.5rem;
     height: 100%;
-    max-height: calc(400px * (2/6));
+    max-height: calc(400px * (5/8));
     display: flex;
     flex-direction: column;
     justify-content: end;
     padding-top: 0;
+}
+
+
+.productBottom .productTitle {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.productBottom .productPrice {
+    padding-top: 0.5rem;
+    font-size: 21px;   
+    font-weight: 700; 
+}
+
+.productBottom .productCategory {
+    font-size: 12px;
+    color: gray;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid gray;
 }
 
 .spinner {
